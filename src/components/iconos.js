@@ -8,8 +8,7 @@ const ListadoIconos = styled.ul`
     justify-content: space-between;
     flex: 1;
     max-width: 500px;
-    margin 3rem auto 0 auto;
-
+    margin 3rem auto 0 auto;  
     li{
         display: flex;
         img {

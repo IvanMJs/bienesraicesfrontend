@@ -49,8 +49,8 @@ const Layout = ({ children }) => {
      `}
     />
       <Helmet>
-        <title>Bienes Raices Gatsby</title>
-        <meta name="description" content="Sitio web de bienes raices en Gatsby"/>
+        <title>Inmobiliaria</title>
+        <meta name="description" content="Sitio web de inmobiliaria en Gatsby"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto:400,700&display=swap" rel="stylesheet"></link>      
       </Helmet>

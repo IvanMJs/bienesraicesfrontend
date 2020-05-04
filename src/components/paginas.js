@@ -4,6 +4,7 @@ import Image from 'gatsby-image';
 import Layout from './layout';
 import { graphql } from 'gatsby';
 import ListadoPropiedades from './listadoPropiedades';
+import '../css/paginas.module.css';
 
 const ContenidoPagina = styled.div`
     max-width: 1200px;
@@ -15,6 +16,7 @@ const ContenidoPagina = styled.div`
         grid-template-columns: 2fr 1fr;
         column-gap: 5rem;
     }
+   
 `;
 export const query = graphql`
     query($id:String!) {
@@ -42,15 +44,16 @@ const Propiedades = ({data: {allStrapiPaginas: { nodes }}}) => {
     return ( 
         <Layout>
                 <main className="contenedor">
+                   
                     <h1>{nombre}</h1>
+                    
                     <ContenidoPagina>
                         <Image
                             fluid={imagen.sharp.fluid}
                         />
-                        <p>{contenido} </p>
+                        <p>{contenido}</p>
                     </ContenidoPagina>
                 </main>
-
                 {nombre === "Propiedades" && (
                     <ListadoPropiedades />
                 )}
@@ -60,30 +63,3 @@ const Propiedades = ({data: {allStrapiPaginas: { nodes }}}) => {
 }
  
 export default Propiedades;
-
-//imagen {
-//    sharp: childImageSharp {
-//        fluid ( maxWidth: 1200 ) {
-//            ...GatsbyImageSharpFluid_withWebp
-//        }
-//    }
-//}
-
-//<main className="contenedor">
-//            <Image
-//                fluid={imagen.sharp.fluid}
-//            />
-//          </main>
-
-
-//<Image 
-//fluid={imagen.sharp.fluid}
-///>
-
-//imagen{
-//    sharp: childImageSharp{
-//        fluid(maxWidth: 1200){
-//            ...GatsbyImageSharpFluid_withWebp
-//        }
-//    }
-//}

@@ -39,6 +39,7 @@ const Index = () => {
             <h1>{nombre}</h1>
             <p css={css`
                 text-align: center;
+                color: white;
             `}>{contenido}</p>
         </div>
       </main>

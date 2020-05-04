@@ -5,6 +5,7 @@ import Iconos from "./iconos"
 import Layout from "./layout"
 import { graphql } from "gatsby"
 
+
 const Contenido = styled.div`
     max-width: 1200px;
     margin: 0 auto;
@@ -26,10 +27,15 @@ const Sidebar = styled.aside`
         border-radius: 2rem;
         background-color:  #75AB00;
         padding: 3rem;
-        color: #FFF;
+        color: white;
 
         p {
             margin: 0;
+            color: white;
+        }
+        .iconos{
+            color:white;
+            font-size: 300rem;
         }
     }
 `;
@@ -75,14 +81,15 @@ const Propiedades = ({data: { allStrapiPropiedades: { nodes }}}) => {
                   <p>{descripcion}</p>
               </main>
               <Sidebar>
+              <div className="agente">
                   <p className="precio">$ {precio}</p>
-                  <Iconos 
+                  <Iconos className="iconos"
                       wc={wc}
                       estacionamiento={estacionamiento}
                       habitaciones={habitaciones}
                   />
 
-                  <div className="agente">
+                  
                       <h2>Vendedor:</h2>
                       <p>{agentes.nombre}</p>
                       <p>Tel: {agentes.telefono}</p>
@@ -97,17 +104,3 @@ const Propiedades = ({data: { allStrapiPropiedades: { nodes }}}) => {
 }
 
 export default Propiedades
-
-//imagen {
-//    sharp: childImageSharp {
-//        fluid ( maxWidth: 1200 ) {
-//            ...GatsbyImageSharpFluid_withWebp
-//        }
-//    }
-//}
-
-//<main>
-//            <Image
-//                fluid={imagen.sharp.fluid}
-//            />
-//          </main>

@@ -6,6 +6,9 @@ import heroCSS from '../css/hero.module.css'
 
 const ImageBacrkoung = styled(BackgroundImage)`
   height: 300px;
+  p{
+    color: white;
+  }
 `
 
 const Encuentra = () => {

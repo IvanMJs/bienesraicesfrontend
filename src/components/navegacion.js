@@ -26,7 +26,7 @@ const Navlink = styled(Link)`
     }
     &.pagina-actual {
         border-bottom: 2px solid #FFF;
-        margin: 1rem;
+        margin: .5rem;
         
     }
 `;

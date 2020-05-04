@@ -26,7 +26,9 @@ const Card = styled.div`
 `
 const Contenido = styled.div`
     padding: 2rem;
+    background-color: white;
     h3{
+        color: #1c2329;
         font-family: 'Lato', san-serif;
         margin: 0 0 2rem 0;
         font-size: 2.4rem;
@@ -36,6 +38,7 @@ const Contenido = styled.div`
         font-size: 2rem;
         color: #75AB00
     }
+    
 `
 
 const PropiedadPreview = ({propiedad}) => {
@@ -67,7 +70,3 @@ const PropiedadPreview = ({propiedad}) => {
 }
  
 export default PropiedadPreview;
-
-//<Image
-//        fluid={imagen.sharp.fluid}
-//       />
