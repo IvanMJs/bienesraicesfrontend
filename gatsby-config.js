@@ -19,7 +19,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: 'http://localhost:1337',
+        apiURL: 'https://bienesraicesfrontend.now.sh/',
         queryLimit: 1000,
         contentTypes:['propiedades', 'paginas', 'categorias']
       }
